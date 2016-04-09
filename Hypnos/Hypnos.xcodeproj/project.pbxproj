@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42FAE5BA1CB8E80900495273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE5B91CB8E80900495273 /* AppDelegate.swift */; };
 		42FAE5BF1CB8E80900495273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FAE5BD1CB8E80900495273 /* Main.storyboard */; };
 		42FAE5C11CB8E80A00495273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42FAE5C01CB8E80A00495273 /* Assets.xcassets */; };
 		42FAE5C41CB8E80A00495273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FAE5C21CB8E80A00495273 /* LaunchScreen.storyboard */; };
 		42FAE5CF1CB8E80A00495273 /* HypnosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE5CE1CB8E80A00495273 /* HypnosTests.swift */; };
 		42FAE5DA1CB8E80A00495273 /* HypnosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE5D91CB8E80A00495273 /* HypnosUITests.swift */; };
+		42FAE5F21CB8F35D00495273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE5F11CB8F35D00495273 /* AppDelegate.swift */; };
 		8BB8325AF482A6057D3F7CA0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1869DDBB9924717F1C728AA4 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		1869DDBB9924717F1C728AA4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FAE5B61CB8E80900495273 /* Hypnos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		42FAE5B91CB8E80900495273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		42FAE5BE1CB8E80900495273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42FAE5C01CB8E80A00495273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42FAE5C31CB8E80A00495273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		42FAE5D51CB8E80A00495273 /* HypnosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FAE5D91CB8E80A00495273 /* HypnosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosUITests.swift; sourceTree = "<group>"; };
 		42FAE5DB1CB8E80A00495273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42FAE5F11CB8F35D00495273 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A59E4205023FF0968D96343 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0803CC81AD5A65B05C6D00 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,7 +145,7 @@
 		42FAE5E81CB8E9AD00495273 /* Configure */ = {
 			isa = PBXGroup;
 			children = (
-				42FAE5B91CB8E80900495273 /* AppDelegate.swift */,
+				42FAE5F11CB8F35D00495273 /* AppDelegate.swift */,
 				42FAE5C51CB8E80A00495273 /* Info.plist */,
 			);
 			path = Configure;
@@ -403,7 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42FAE5BA1CB8E80900495273 /* AppDelegate.swift in Sources */,
+				42FAE5F21CB8F35D00495273 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,10 +548,12 @@
 			baseConfigurationReference = 9A59E4205023FF0968D96343 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hypnos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alloc.Hypnos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -560,6 +562,7 @@
 			baseConfigurationReference = EF0803CC81AD5A65B05C6D00 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hypnos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alloc.Hypnos;
