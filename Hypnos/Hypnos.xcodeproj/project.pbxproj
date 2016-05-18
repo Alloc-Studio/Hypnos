@@ -13,6 +13,12 @@
 		42FAE5CF1CB8E80A00495273 /* HypnosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE5CE1CB8E80A00495273 /* HypnosTests.swift */; };
 		42FAE5DA1CB8E80A00495273 /* HypnosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE5D91CB8E80A00495273 /* HypnosUITests.swift */; };
 		42FAE5F21CB8F35D00495273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE5F11CB8F35D00495273 /* AppDelegate.swift */; };
+		65C2DF321CEC3BBE000E6FD1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF311CEC3BBE000E6FD1 /* MainViewController.swift */; };
+		65C2DF341CEC3CD1000E6FD1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF331CEC3CD1000E6FD1 /* HomeViewController.swift */; };
+		65C2DF361CEC3D66000E6FD1 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF351CEC3D66000E6FD1 /* RecommendViewController.swift */; };
+		65C2DF381CEC3D88000E6FD1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF371CEC3D88000E6FD1 /* ProfileViewController.swift */; };
+		65C2DF3F1CEC4143000E6FD1 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF3E1CEC4143000E6FD1 /* LeftViewController.swift */; };
+		65C2DF411CEC4AAC000E6FD1 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF401CEC4AAC000E6FD1 /* ContainerViewController.swift */; };
 		8BB8325AF482A6057D3F7CA0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1869DDBB9924717F1C728AA4 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +53,13 @@
 		42FAE5D91CB8E80A00495273 /* HypnosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosUITests.swift; sourceTree = "<group>"; };
 		42FAE5DB1CB8E80A00495273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42FAE5F11CB8F35D00495273 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65C2DF311CEC3BBE000E6FD1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		65C2DF331CEC3CD1000E6FD1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		65C2DF351CEC3D66000E6FD1 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		65C2DF371CEC3D88000E6FD1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		65C2DF3A1CEC400E000E6FD1 /* Hypnos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Hypnos-Bridging-Header.h"; path = "../Hypnos-Bridging-Header.h"; sourceTree = "<group>"; };
+		65C2DF3E1CEC4143000E6FD1 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		65C2DF401CEC4AAC000E6FD1 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		9A59E4205023FF0968D96343 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0803CC81AD5A65B05C6D00 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +123,8 @@
 		42FAE5B81CB8E80900495273 /* Hypnos */ = {
 			isa = PBXGroup;
 			children = (
+				65C2DF391CEC3FA1000E6FD1 /* Lib */,
+				65C2DF301CEC3B95000E6FD1 /* Main */,
 				42FAE5EC1CB8EA0500495273 /* Model */,
 				42FAE5EA1CB8E9D600495273 /* View */,
 				42FAE5E91CB8E9C600495273 /* ViewModel */,
@@ -145,6 +160,7 @@
 		42FAE5E81CB8E9AD00495273 /* Configure */ = {
 			isa = PBXGroup;
 			children = (
+				65C2DF3A1CEC400E000E6FD1 /* Hypnos-Bridging-Header.h */,
 				42FAE5F11CB8F35D00495273 /* AppDelegate.swift */,
 				42FAE5C51CB8E80A00495273 /* Info.plist */,
 			);
@@ -207,6 +223,26 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		65C2DF301CEC3B95000E6FD1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				65C2DF311CEC3BBE000E6FD1 /* MainViewController.swift */,
+				65C2DF351CEC3D66000E6FD1 /* RecommendViewController.swift */,
+				65C2DF371CEC3D88000E6FD1 /* ProfileViewController.swift */,
+				65C2DF331CEC3CD1000E6FD1 /* HomeViewController.swift */,
+				65C2DF3E1CEC4143000E6FD1 /* LeftViewController.swift */,
+				65C2DF401CEC4AAC000E6FD1 /* ContainerViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		65C2DF391CEC3FA1000E6FD1 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 		BCC1E7BC71FF94E754CA625A /* Pods */ = {
@@ -404,6 +440,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				42FAE5F21CB8F35D00495273 /* AppDelegate.swift in Sources */,
+				65C2DF361CEC3D66000E6FD1 /* RecommendViewController.swift in Sources */,
+				65C2DF411CEC4AAC000E6FD1 /* ContainerViewController.swift in Sources */,
+				65C2DF381CEC3D88000E6FD1 /* ProfileViewController.swift in Sources */,
+				65C2DF321CEC3BBE000E6FD1 /* MainViewController.swift in Sources */,
+				65C2DF341CEC3CD1000E6FD1 /* HomeViewController.swift in Sources */,
+				65C2DF3F1CEC4143000E6FD1 /* LeftViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,9 +592,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hypnos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alloc.Hypnos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hypnos/Hypnos-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -564,9 +608,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hypnos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alloc.Hypnos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hypnos/Hypnos-Bridging-Header.h";
 			};
 			name = Release;
 		};
