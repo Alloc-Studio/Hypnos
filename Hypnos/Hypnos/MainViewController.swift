@@ -24,7 +24,7 @@ class MainViewController: UITabBarController {
     }
     
 
-    //创建子控制器
+    // 创建子控制器
     private  func addChildViewController(childController: UIViewController,imageName: String,titleName:String) {
         
         let vc = childController
@@ -37,7 +37,7 @@ class MainViewController: UITabBarController {
         
     }
 
-    //添加子控制器
+    // 添加子控制器
     private func addAllChildViewControllers() {
         addChildViewController(HomeViewController(), imageName: "tabbar_home", titleName: "首页")
         addChildViewController(RecommendViewController(), imageName: "tabbar_message_center", titleName: "推荐")

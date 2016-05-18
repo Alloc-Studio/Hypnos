@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		426ADF631CEC8C8E00DDBD91 /* HypnosMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426ADF621CEC8C8E00DDBD91 /* HypnosMacro.swift */; };
+		426ADF651CEC949E00DDBD91 /* HypnosConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426ADF641CEC949E00DDBD91 /* HypnosConfig.swift */; };
 		42FAE5BF1CB8E80900495273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FAE5BD1CB8E80900495273 /* Main.storyboard */; };
 		42FAE5C11CB8E80A00495273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42FAE5C01CB8E80A00495273 /* Assets.xcassets */; };
 		42FAE5C41CB8E80A00495273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FAE5C21CB8E80A00495273 /* LaunchScreen.storyboard */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		1869DDBB9924717F1C728AA4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426ADF621CEC8C8E00DDBD91 /* HypnosMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosMacro.swift; sourceTree = "<group>"; };
+		426ADF641CEC949E00DDBD91 /* HypnosConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosConfig.swift; sourceTree = "<group>"; };
 		42FAE5B61CB8E80900495273 /* Hypnos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FAE5BE1CB8E80900495273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42FAE5C01CB8E80A00495273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,8 +164,10 @@
 		42FAE5E81CB8E9AD00495273 /* Configure */ = {
 			isa = PBXGroup;
 			children = (
-				65C2DF3A1CEC400E000E6FD1 /* Hypnos-Bridging-Header.h */,
+				426ADF641CEC949E00DDBD91 /* HypnosConfig.swift */,
+				426ADF621CEC8C8E00DDBD91 /* HypnosMacro.swift */,
 				42FAE5F11CB8F35D00495273 /* AppDelegate.swift */,
+				65C2DF3A1CEC400E000E6FD1 /* Hypnos-Bridging-Header.h */,
 				42FAE5C51CB8E80A00495273 /* Info.plist */,
 			);
 			path = Configure;
@@ -439,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426ADF651CEC949E00DDBD91 /* HypnosConfig.swift in Sources */,
 				42FAE5F21CB8F35D00495273 /* AppDelegate.swift in Sources */,
 				65C2DF361CEC3D66000E6FD1 /* RecommendViewController.swift in Sources */,
 				65C2DF411CEC4AAC000E6FD1 /* ContainerViewController.swift in Sources */,
@@ -446,6 +453,7 @@
 				65C2DF321CEC3BBE000E6FD1 /* MainViewController.swift in Sources */,
 				65C2DF341CEC3CD1000E6FD1 /* HomeViewController.swift in Sources */,
 				65C2DF3F1CEC4143000E6FD1 /* LeftViewController.swift in Sources */,
+				426ADF631CEC8C8E00DDBD91 /* HypnosMacro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
