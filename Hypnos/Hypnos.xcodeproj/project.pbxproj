@@ -9,19 +9,20 @@
 /* Begin PBXBuildFile section */
 		426ADF631CEC8C8E00DDBD91 /* HypnosMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426ADF621CEC8C8E00DDBD91 /* HypnosMacro.swift */; };
 		426ADF651CEC949E00DDBD91 /* HypnosConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426ADF641CEC949E00DDBD91 /* HypnosConfig.swift */; };
+		426ADF6A1CED8DCF00DDBD91 /* WildogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426ADF691CED8DCF00DDBD91 /* WildogTests.swift */; };
 		42FAE5BF1CB8E80900495273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FAE5BD1CB8E80900495273 /* Main.storyboard */; };
 		42FAE5C11CB8E80A00495273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42FAE5C01CB8E80A00495273 /* Assets.xcassets */; };
 		42FAE5C41CB8E80A00495273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FAE5C21CB8E80A00495273 /* LaunchScreen.storyboard */; };
 		42FAE5CF1CB8E80A00495273 /* HypnosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE5CE1CB8E80A00495273 /* HypnosTests.swift */; };
 		42FAE5DA1CB8E80A00495273 /* HypnosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE5D91CB8E80A00495273 /* HypnosUITests.swift */; };
 		42FAE5F21CB8F35D00495273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FAE5F11CB8F35D00495273 /* AppDelegate.swift */; };
+		5E777242995D10F71965FE98 /* Pods_Hypnos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A72A1736AFAC79F4DE9D060 /* Pods_Hypnos.framework */; };
 		65C2DF321CEC3BBE000E6FD1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF311CEC3BBE000E6FD1 /* MainViewController.swift */; };
 		65C2DF341CEC3CD1000E6FD1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF331CEC3CD1000E6FD1 /* HomeViewController.swift */; };
 		65C2DF361CEC3D66000E6FD1 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF351CEC3D66000E6FD1 /* RecommendViewController.swift */; };
 		65C2DF381CEC3D88000E6FD1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF371CEC3D88000E6FD1 /* ProfileViewController.swift */; };
 		65C2DF3F1CEC4143000E6FD1 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF3E1CEC4143000E6FD1 /* LeftViewController.swift */; };
 		65C2DF411CEC4AAC000E6FD1 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2DF401CEC4AAC000E6FD1 /* ContainerViewController.swift */; };
-		8BB8325AF482A6057D3F7CA0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1869DDBB9924717F1C728AA4 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AE9F4983DBBBF4D5D374647 /* Pods-Hypnos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hypnos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hypnos/Pods-Hypnos.release.xcconfig"; sourceTree = "<group>"; };
 		1869DDBB9924717F1C728AA4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426ADF621CEC8C8E00DDBD91 /* HypnosMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosMacro.swift; sourceTree = "<group>"; };
 		426ADF641CEC949E00DDBD91 /* HypnosConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosConfig.swift; sourceTree = "<group>"; };
+		426ADF691CED8DCF00DDBD91 /* WildogTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WildogTests.swift; sourceTree = "<group>"; };
 		42FAE5B61CB8E80900495273 /* Hypnos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FAE5BE1CB8E80900495273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42FAE5C01CB8E80A00495273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,8 +67,8 @@
 		65C2DF3A1CEC400E000E6FD1 /* Hypnos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Hypnos-Bridging-Header.h"; path = "../Hypnos-Bridging-Header.h"; sourceTree = "<group>"; };
 		65C2DF3E1CEC4143000E6FD1 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		65C2DF401CEC4AAC000E6FD1 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		9A59E4205023FF0968D96343 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		EF0803CC81AD5A65B05C6D00 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7A72A1736AFAC79F4DE9D060 /* Pods_Hypnos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hypnos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8425134E2B2151E82ACC3CB /* Pods-Hypnos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hypnos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hypnos/Pods-Hypnos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BB8325AF482A6057D3F7CA0 /* Pods.framework in Frameworks */,
+				5E777242995D10F71965FE98 /* Pods_Hypnos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +101,16 @@
 			isa = PBXGroup;
 			children = (
 				1869DDBB9924717F1C728AA4 /* Pods.framework */,
+				7A72A1736AFAC79F4DE9D060 /* Pods_Hypnos.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		426ADF661CECA1A100DDBD91 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		42FAE5AD1CB8E80900495273 = {
@@ -109,8 +120,8 @@
 				42FAE5CD1CB8E80A00495273 /* HypnosTests */,
 				42FAE5D81CB8E80A00495273 /* HypnosUITests */,
 				42FAE5B71CB8E80900495273 /* Products */,
-				BCC1E7BC71FF94E754CA625A /* Pods */,
 				2549724CEDA17C39F60A631D /* Frameworks */,
+				94BD82A40EA3C17F65518030 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				42FAE5CE1CB8E80A00495273 /* HypnosTests.swift */,
+				426ADF691CED8DCF00DDBD91 /* WildogTests.swift */,
 				42FAE5D01CB8E80A00495273 /* Info.plist */,
 			);
 			path = HypnosTests;
@@ -197,6 +209,7 @@
 		42FAE5EC1CB8EA0500495273 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				426ADF661CECA1A100DDBD91 /* Login */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,11 +264,11 @@
 			name = Lib;
 			sourceTree = "<group>";
 		};
-		BCC1E7BC71FF94E754CA625A /* Pods */ = {
+		94BD82A40EA3C17F65518030 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9A59E4205023FF0968D96343 /* Pods.debug.xcconfig */,
-				EF0803CC81AD5A65B05C6D00 /* Pods.release.xcconfig */,
+				C8425134E2B2151E82ACC3CB /* Pods-Hypnos.debug.xcconfig */,
+				0AE9F4983DBBBF4D5D374647 /* Pods-Hypnos.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -267,12 +280,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42FAE5DE1CB8E80A00495273 /* Build configuration list for PBXNativeTarget "Hypnos" */;
 			buildPhases = (
-				D395F7D79063ED38FA89B87E /* Check Pods Manifest.lock */,
+				E05B230D9F959A3A1058C096 /* 📦 Check Pods Manifest.lock */,
 				42FAE5B21CB8E80900495273 /* Sources */,
 				42FAE5B31CB8E80900495273 /* Frameworks */,
 				42FAE5B41CB8E80900495273 /* Resources */,
-				75A239140CA6FF254ABF0320 /* Embed Pods Frameworks */,
-				AF10A0B0D58C0380EFCDEEA1 /* Copy Pods Resources */,
+				6F2784E68D07585F0D3EF31C /* 📦 Embed Pods Frameworks */,
+				0EF3AEE4CFC90767624CEC26 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -393,44 +406,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		75A239140CA6FF254ABF0320 /* Embed Pods Frameworks */ = {
+		0EF3AEE4CFC90767624CEC26 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hypnos/Pods-Hypnos-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AF10A0B0D58C0380EFCDEEA1 /* Copy Pods Resources */ = {
+		6F2784E68D07585F0D3EF31C /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hypnos/Pods-Hypnos-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D395F7D79063ED38FA89B87E /* Check Pods Manifest.lock */ = {
+		E05B230D9F959A3A1058C096 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42FAE5CF1CB8E80A00495273 /* HypnosTests.swift in Sources */,
+				426ADF6A1CED8DCF00DDBD91 /* WildogTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,7 +609,7 @@
 		};
 		42FAE5DF1CB8E80A00495273 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A59E4205023FF0968D96343 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C8425134E2B2151E82ACC3CB /* Pods-Hypnos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -611,7 +625,7 @@
 		};
 		42FAE5E01CB8E80A00495273 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF0803CC81AD5A65B05C6D00 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 0AE9F4983DBBBF4D5D374647 /* Pods-Hypnos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -626,6 +640,7 @@
 		};
 		42FAE5E21CB8E80A00495273 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8425134E2B2151E82ACC3CB /* Pods-Hypnos.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HypnosTests/Info.plist;
@@ -650,6 +665,7 @@
 		};
 		42FAE5E51CB8E80A00495273 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8425134E2B2151E82ACC3CB /* Pods-Hypnos.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = HypnosUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

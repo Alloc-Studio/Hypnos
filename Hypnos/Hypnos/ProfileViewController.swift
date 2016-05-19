@@ -8,6 +8,7 @@
 
 import UIKit
 import Cartography
+import Wilddog
 
 
 class ProfileViewController: UITableViewController {
@@ -38,6 +39,7 @@ class ProfileViewController: UITableViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         setupHeader()
+        
         
     }
     

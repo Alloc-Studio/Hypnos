@@ -22,5 +22,5 @@ struct HypnosConfig {
 
 extension HypnosConfig {
     
-    // MARK: - Other Config
+    // MARK: - API Config
 }
