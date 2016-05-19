@@ -10,7 +10,7 @@ import XCTest
 @testable import Hypnos
 import Wilddog
 
-class WildogTests: XCTest {
+class WildogTests: XCTestCase {
     
     let ref = Wilddog(url: "https://hypnos.wilddogio.com")
     
