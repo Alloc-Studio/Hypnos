@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UnloginView" customModule="Hypnos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recommend_cry" translatesAutoresizingMaskIntoConstraints="NO" id="8wF-za-gfd">
+                    <rect key="frame" x="126" y="170" width="123" height="142"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="123" id="B12-Gb-rnm"/>
+                        <constraint firstAttribute="height" constant="142" id="XPf-jX-oLr"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6r-SU-usR">
+                    <rect key="frame" x="63" y="453" width="248" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="248" id="Oz9-57-bd5"/>
+                        <constraint firstAttribute="height" constant="54" id="P9A-6R-onp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="登录" backgroundImage="recommend_login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showLoginController:" destination="iN0-l3-epB" eventType="touchUpInside" id="IlH-Za-XLy"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为什么不登录呢，是不是不喜欢人家了。。。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jK6-T9-Ous">
+                    <rect key="frame" x="60" y="344" width="255" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="255" id="c3E-9l-nHg"/>
+                        <constraint firstAttribute="height" constant="48" id="uuG-Hr-JOh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jK6-T9-Ous" firstAttribute="top" secondItem="8wF-za-gfd" secondAttribute="bottom" constant="32" id="9ea-RM-ae6"/>
+                <constraint firstItem="jK6-T9-Ous" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BlC-la-f0J"/>
+                <constraint firstItem="i6r-SU-usR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="N9K-JC-N4s"/>
+                <constraint firstItem="8wF-za-gfd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Y2i-zS-4Bj"/>
+                <constraint firstItem="8wF-za-gfd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="170" id="xT3-wO-kw0"/>
+                <constraint firstItem="i6r-SU-usR" firstAttribute="top" secondItem="jK6-T9-Ous" secondAttribute="bottom" constant="61" id="xbN-6q-GrX"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="408.5" y="674.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="recommend_cry" width="246" height="284"/>
+        <image name="recommend_login" width="378" height="93"/>
+    </resources>
+</document>

@@ -8,6 +8,9 @@
 
 import UIKit
 
+import AVFoundation
+import SVProgressHUD
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -22,8 +25,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = ContainerViewController()
         window?.makeKeyAndVisible()
         
+        setupAppreance()
         
-        
+//        let session = AVAudioSession.sharedInstance()
+//       
+//        session.setCategory(AVAudioSessionCategoryPlayback)
+//
+//        session.setActive(true)
+
         return true
     }
 
@@ -48,7 +57,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+}
 
-
+extension AppDelegate {
+    
+    
+    private func setupAppreance() {
+        
+        // SVProgressHUD的外观配置
+        SVProgressHUD.setDefaultStyle(.Dark)
+        SVProgressHUD.setDefaultMaskType(.Black)
+        SVProgressHUD.setDefaultAnimationType(.Flat)
+        
+        // 导航栏的相关全局配置
+        UINavigationBar.appearance().barTintColor = HypnosConfig.DefaultThemeColor
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: HypnosConfig.NavTextColor]
+        UINavigationBar.appearance().tintColor = HypnosConfig.NavTextColor
+        UINavigationBar.appearance().translucent = false
+        
+        // Tabbar的相关全局配置
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: HypnosConfig.TabbarTextColor_Normal], forState: .Normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: HypnosConfig.DefaultThemeColor], forState: .Selected)
+        
+        UITabBar.appearance().translucent = false
+    }
 }
 

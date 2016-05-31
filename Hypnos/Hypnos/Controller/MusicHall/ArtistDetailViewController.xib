@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistDetailViewController" customModule="Hypnos" customModuleProvider="target">
+            <connections>
+                <outlet property="ablumImage" destination="QeZ-Me-UGV" id="3KL-fU-tCC"/>
+                <outlet property="artistName" destination="Cmi-ws-dW1" id="MDc-7Y-OFW"/>
+                <outlet property="background" destination="G9m-1k-XV9" id="tmC-rn-a6Z"/>
+                <outlet property="follower" destination="bu8-yw-G4r" id="iCg-NP-jDP"/>
+                <outlet property="headerView" destination="Hy7-IS-hHF" id="fNI-mn-sHz"/>
+                <outlet property="member" destination="dVm-TA-lUw" id="o0e-Vc-1Yz"/>
+                <outlet property="style" destination="oU9-Ns-4JH" id="NQg-wI-Dvo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="673"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hy7-IS-hHF">
+                    <rect key="frame" x="0.0" y="0.0" width="366" height="213"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G9m-1k-XV9">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="213"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_list_detail_cover_alb-ip6" translatesAutoresizingMaskIntoConstraints="NO" id="eOb-f6-Bwg">
+                            <rect key="frame" x="26" y="40" width="145" height="125"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="145" id="BOa-Xb-GAj"/>
+                                <constraint firstAttribute="height" constant="125" id="oei-Bk-E6i"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QeZ-Me-UGV">
+                            <rect key="frame" x="26" y="40" width="125" height="125"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="uHd-Ii-PGW"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="流派:轻音乐 Easy Listening" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oU9-Ns-4JH">
+                            <rect key="frame" x="194" y="74" width="159" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="成员：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVm-TA-lUw">
+                            <rect key="frame" x="194" y="115" width="47" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3456人关注" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bu8-yw-G4r">
+                            <rect key="frame" x="194" y="144" width="108" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmi-ws-dW1">
+                            <rect key="frame" x="194" y="46" width="117" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="9VO-bb-xM7"/>
+                                <constraint firstAttribute="width" constant="117" id="FRg-JE-aZU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="eOb-f6-Bwg" firstAttribute="leading" secondItem="Hy7-IS-hHF" secondAttribute="leading" constant="26" id="0dn-fF-fQ3"/>
+                        <constraint firstAttribute="bottom" secondItem="G9m-1k-XV9" secondAttribute="bottom" id="ICi-Cy-5Vh"/>
+                        <constraint firstItem="Cmi-ws-dW1" firstAttribute="leading" secondItem="QeZ-Me-UGV" secondAttribute="trailing" constant="43" id="JEn-wv-X85"/>
+                        <constraint firstItem="QeZ-Me-UGV" firstAttribute="top" secondItem="eOb-f6-Bwg" secondAttribute="top" id="JKm-eI-KLi"/>
+                        <constraint firstAttribute="height" constant="213" id="PB2-76-dsr"/>
+                        <constraint firstItem="G9m-1k-XV9" firstAttribute="top" secondItem="Hy7-IS-hHF" secondAttribute="top" id="PWY-Uu-HKs"/>
+                        <constraint firstItem="G9m-1k-XV9" firstAttribute="leading" secondItem="Hy7-IS-hHF" secondAttribute="leading" id="Qbi-7C-0ur"/>
+                        <constraint firstItem="Cmi-ws-dW1" firstAttribute="top" secondItem="QeZ-Me-UGV" secondAttribute="top" constant="6" id="aos-71-Xuo"/>
+                        <constraint firstItem="QeZ-Me-UGV" firstAttribute="leading" secondItem="eOb-f6-Bwg" secondAttribute="leading" id="ik5-eN-chD"/>
+                        <constraint firstAttribute="trailing" secondItem="G9m-1k-XV9" secondAttribute="trailing" id="nxb-F3-sou"/>
+                        <constraint firstItem="QeZ-Me-UGV" firstAttribute="bottom" secondItem="eOb-f6-Bwg" secondAttribute="bottom" id="wcF-NL-pL6"/>
+                        <constraint firstItem="eOb-f6-Bwg" firstAttribute="top" secondItem="Hy7-IS-hHF" secondAttribute="top" constant="40" id="xc4-XG-nrz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hy7-IS-hHF" secondAttribute="trailing" id="7KL-nD-vDb"/>
+                <constraint firstItem="Hy7-IS-hHF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aOM-VW-8wc"/>
+                <constraint firstItem="Hy7-IS-hHF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xUX-3X-qxH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="341" y="525.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cm2_list_detail_cover_alb-ip6" width="162" height="140"/>
+    </resources>
+</document>

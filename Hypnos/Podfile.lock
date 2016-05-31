@@ -1,36 +1,45 @@
 PODS:
-  - Alamofire (3.3.1)
+  - Alamofire (3.4.0)
   - Cartography (0.6.0)
-  - ReactiveCocoa (4.1.0):
-    - ReactiveCocoa/UI (= 4.1.0)
-    - Result (~> 2.0)
-  - ReactiveCocoa/Core (4.1.0):
-    - ReactiveCocoa/no-arc
-    - Result (~> 2.0)
-  - ReactiveCocoa/no-arc (4.1.0):
-    - Result (~> 2.0)
-  - ReactiveCocoa/UI (4.1.0):
-    - ReactiveCocoa/Core
-    - Result (~> 2.0)
-  - Result (2.0.0)
+  - JLToast (1.4.1)
+  - Kingfisher (2.4.1)
+  - PNChart (0.8.8):
+    - UICountingLabel (~> 1.2.0)
+  - SDCycleScrollView (1.64):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SlideMenuControllerSwift (2.1.1)
+  - SVProgressHUD (2.0.3)
   - SwiftyJSON (2.3.2)
-  - Wilddog (1.0.0)
+  - UICountingLabel (1.2.0)
+  - Wilddog (1.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - Cartography (~> 0.6.0)
-  - ReactiveCocoa (~> 4.1.0)
+  - JLToast
+  - Kingfisher
+  - PNChart (~> 0.8.8)
+  - SDCycleScrollView (~> 1.64)
+  - SlideMenuControllerSwift
+  - SVProgressHUD (~> 2.0)
   - SwiftyJSON (~> 2.3.2)
   - Wilddog
 
 SPEC CHECKSUMS:
-  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
   Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
-  ReactiveCocoa: d70004d7a366a7b8e87e60ce2347182c77701949
-  Result: 9e75e1111c774c6ac594e14907b15057053a7959
+  JLToast: f2ccfdb8726e562e6c0154fa3658cd432021b1cc
+  Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
+  PNChart: 25f91e9c4688af49c3647489760624d037f5383f
+  SDCycleScrollView: 806fedb9342ab03b58b84442f985517b42c7cbb7
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SlideMenuControllerSwift: 82ada9b04e03538c84d034cf1c09e5849c0113f7
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
-  Wilddog: 08618a6d5e9d774de7c4424119227b9392de2002
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  Wilddog: c59eb9b450c74091276b8bf09170f35dfab50d2d
 
-PODFILE CHECKSUM: 5a31c6271b7e8c73117a7aaf4b455bc436f3a55b
-
-COCOAPODS: 1.0.0.rc.1
+COCOAPODS: 0.39.0

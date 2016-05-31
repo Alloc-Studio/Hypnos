@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecommendBanner" customModule="Hypnos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐歌曲根据您的心率情况生成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rW-Ei-1wN">
+                    <rect key="frame" x="8" y="84" width="182" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_heart" translatesAutoresizingMaskIntoConstraints="NO" id="141-V4-Z4k">
+                    <rect key="frame" x="118" y="8" width="72" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="Woh-Uh-Dg9"/>
+                        <constraint firstAttribute="width" constant="72" id="rqr-sc-8kP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bmp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ws-au-S1z">
+                    <rect key="frame" x="301" y="62" width="35" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="DNB-gN-Krs"/>
+                        <constraint firstAttribute="width" constant="35" id="Ta3-PD-RFl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJU-qy-mfF">
+                    <rect key="frame" x="198" y="25" width="100" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="UtZ-Qf-LuV"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="cd5-Kr-Vzy"/>
+                        <constraint firstAttribute="height" constant="58" id="d9H-dY-kWk"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="58" id="ya5-It-W60"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.50196078431372548" green="0.74901960784313726" blue="0.90980392156862744" alpha="0.91646012931034482" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="6Ws-au-S1z" firstAttribute="leading" secondItem="CJU-qy-mfF" secondAttribute="trailing" constant="3" id="3e5-UC-ff3"/>
+                <constraint firstItem="CJU-qy-mfF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="8ad-BB-uaA"/>
+                <constraint firstItem="6Ws-au-S1z" firstAttribute="bottom" secondItem="CJU-qy-mfF" secondAttribute="bottom" id="FFR-GW-1D9"/>
+                <constraint firstItem="141-V4-Z4k" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="KW9-T0-EZa"/>
+                <constraint firstItem="141-V4-Z4k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="118" id="MFB-B2-qxt"/>
+                <constraint firstAttribute="bottom" secondItem="9rW-Ei-1wN" secondAttribute="bottom" id="UA6-e0-PB7"/>
+                <constraint firstItem="CJU-qy-mfF" firstAttribute="leading" secondItem="141-V4-Z4k" secondAttribute="trailing" constant="8" id="UT4-wW-SqD"/>
+                <constraint firstItem="9rW-Ei-1wN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="VPG-8b-Bmo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="rateLable" destination="CJU-qy-mfF" id="GeY-bP-SZA"/>
+            </connections>
+            <point key="canvasLocation" x="408.5" y="550"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_heart" width="189" height="217"/>
+    </resources>
+</document>
